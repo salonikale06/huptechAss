@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'; // Import Route
 import "crypto-browserify";
 import './App.css';
 import UserForm from './components/UserForm';
+import NewUserData from "./components/NewUserData";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
                     <Route path="/login" element={<Login />} />
                     <Route path="/register" element={<Register />} />
                     <Route path="/Dashboard" element={<Dashboard />} />
+                    <Route path="/NewUserData" element={<NewUserData />} />
                 </Routes>
             </BrowserRouter>
     </div>
